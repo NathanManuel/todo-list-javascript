@@ -18,22 +18,17 @@
           placeholder="Insert todo..."
           maxlength="25"
         />
-        <div id="button"></div>
+        <div id="btn"></div>
       </div>
-      <div class="todoI">
-        <input type="checkbox" class="checkbox-round" /><a class="todo-text">
-          This is text</a
-        >
-      </div>
-      <!-- <div class="todoI">
-        <input type="checkbox" class="checkbox-round" /><a class="todo-text"
-          >This is more text</a
-        > -->
+      <div id="items">
+        <div id="to-do-list"></div>
+        <div id="todoI" class="todo-info">
+          <h4 id="number-todo"></h4>
+          <button onclick="clearAll()" id="deleteAll">Clear Complete</button>
+        </div>
       </div>
     </div>
-    <div class="content">
-      
-    </div>
-    <script src="index.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

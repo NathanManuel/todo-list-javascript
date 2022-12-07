@@ -32,7 +32,7 @@ input {
   width: 400px;
   height: 20px;
 }
-#button {
+#btn {
   border-radius: 0px 30px 30px 0px;
   background: #73ad21;
   padding: 28px;
@@ -42,13 +42,26 @@ input {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.todoI {
+#items {
   grid-column: 2/3;
+}
+#todoI {
   background: #25273c;
   width: 400px;
   height: 38px;
-  border-bottom: solid #4840405e;
+
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+}
+#to-do-list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#number-todo {
+  margin-left: 10px;
 }
 
 p {
@@ -65,24 +78,49 @@ h1 {
   font-size: 60px;
 }
 
+#deleteAll {
+  color: white;
+  background-color: transparent;
+  border: 0;
+}
+
+.todo-info {
+  border: 2px solid #ad02fe;
+}
 .todo-text {
-  margin-left: 4px;
+  border-bottom: solid #4840405e;
+  width: 300px;
+  padding: 7px;
+  font-size: auto;
 }
 .checkbox-round {
-  width: 30px;
-  height: 30px;
-  margin-top: 5px;
-  background-color: #25273c;
+  background-color: transparent;
   border-radius: 50%;
   vertical-align: middle;
   border: 1px solid #bf56ffc9;
   appearance: none;
-  -webkit-appearance: none;
-  outline: none;
   cursor: pointer;
 }
+.checkbox-round-select {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
 
-.checkbox-round:checked {
+.checkbox-round-delete {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+}
+
+.checkbox-round-select-checked {
   background-image: url("Frame.svg");
   background-position: center;
+}
+
+.checkbox-round-select-checked ~ .todo-text {
+  text-decoration: line-through;
+  color: #0f90a191;
 }
