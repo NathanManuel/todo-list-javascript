@@ -57,7 +57,7 @@ h1 {
   padding: 28px;
   margin-left: 320px;
   margin-top: -55px;
-  background-image: url("Arrow.png");
+  background-image: url("./images/Arrow.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -124,7 +124,7 @@ h1 {
 }
 
 .checkbox-round-select-checked {
-  background-image: url("Frame.svg");
+  background-image: url("./images/Frame.svg");
   background-position: center;
 }
 
